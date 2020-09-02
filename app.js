@@ -20,7 +20,6 @@ maxNum.textContent = max;
 
 // Play again Listener
 game.addEventListener('mousedown', function(e) {
-    console.log(e.target.className)
     if (e.target.className == 'btn btn-primary btn-sm play-again') {
         window.location.reload();
     }
