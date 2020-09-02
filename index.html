@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+  body{
+    background-color:#4d475f;
+
+  }
+  #game{
+    background-color: #fff;
+    padding: 30px 15px 15px 10px;
+    margin:31px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #guess-input{
+    border-radius: 0px;
+  }
+</style>
+  </head>
+<body>
+     <div class="container">
+       <div class="row d-flex justify-content-center align-item-center pt-4">
+         <div class="col-sm-4 pb-4">
+           <h4 class="text-center" style="color:#fff">Number Guesser Game</h4>
+         </div>
+       </div>
+       <div class="row d-flex align-item-center justify-content-center">
+         <div class="col-md-4" id="game">
+          <form>
+            <div class="form-group">
+              <input type="number" class="form-control form-control-sm" id="guess-input" aria-describedby="emailHelp" placeholder="Enter your guess">
+              <small id="emailHelp" class="form-text text-muted">Guess number between <span class="minNum"></span> and <span class="maxNum"></span></small>
+            </div>
+            <input type="button" class="btn btn-primary btn-sm" id="guess-btn" value="Submit">
+            <p><small class="message"></small></p>
+          </form>
+         </div>
+       </div>
+
+         </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
